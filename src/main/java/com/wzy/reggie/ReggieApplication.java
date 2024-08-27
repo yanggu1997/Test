@@ -13,7 +13,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Slf4j
 @SpringBootApplication
 @ServletComponentScan//扫描WebFilter过滤器
-@EnableCaching
+@EnableCaching//开启spring cache注解缓存功能
+//@EnableTransactionManagement
 public class ReggieApplication {
 
     public static void main(String[] args) {
