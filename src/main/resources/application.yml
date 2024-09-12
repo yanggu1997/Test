@@ -39,7 +39,7 @@ spring:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
 #redis相关配置
   redis:
-    host: localhost
+    host: 192.168.108.1
     port: 6379
     database: 0
     jedis:
