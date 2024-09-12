@@ -1,5 +1,6 @@
 package com.wzy.reggie.common;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -13,12 +14,16 @@ import java.util.Map;
 @Data
 public class R<T> implements Serializable{
 
+    @ApiModelProperty("编码")
     private Integer code; //编码：1成功，0和其它数字为失败
 
+    @ApiModelProperty("错误信息")
     private String msg; //错误信息
 
+    @ApiModelProperty("数据")
     private T data; //数据
 
+    @ApiModelProperty("动态数据")
     private Map map = new HashMap(); //动态数据
 
 // R<T> 为返回值类型，前面的<T>为泛型，success为方法名
